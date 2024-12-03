@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Calculator</title>
+   <style>
+      /* รีเซ็ตค่าเบื้องต้น */
+      body, h1, input, button, form {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      /* จัดพื้นหลังและฟอนต์ */
+      body {
+         font-family: Arial, sans-serif;
+         background-color: #f4f4f4;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         min-height: 100vh;
+         margin: 0;
+      }
+
+      header h1 {
+         color: #333;
+         margin-bottom: 20px;
+      }
+
+      .calculator {
+         background: #fff;
+         padding: 20px 30px;
+         border-radius: 8px;
+         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+         width: 100%;
+         max-width: 400px;
+         text-align: center;
+      }
+
+      .calculator input {
+         width: 100%;
+         padding: 10px;
+         margin-bottom: 15px;
+         border: 1px solid #ccc;
+         border-radius: 4px;
+         font-size: 16px;
+      }
+
+      .calculator button {
+         background: #007BFF;
+         color: #fff;
+         border: none;
+         padding: 10px;
+         width: 100%;
+         border-radius: 4px;
+         font-size: 16px;
+         cursor: pointer;
+         transition: background 0.3s;
+      }
+
+      .calculator button:hover {
+         background: #0056b3;
+      }
+
+      .calculator button:active {
+         background: #00408d;
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <h1>BMI Calculator</h1>
+   </header>
+   <main>
+      <div class="BMI Calculator">
+         <form action="/bmiCalculator" method="post">
+            <input type="text" name="weigth" placeholder="Enter the heigth Kg." required>
+            <input type="text" name="heigth" placeholder="Enter the weigth M." required>
+            <button type="submit" name="submit">Calculate</button>
+         </form>
+      </div>
+   </main>
+</body>
+</html>

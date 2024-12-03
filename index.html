@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      /* Reset Styles */
+      body,
+      h1,
+      form,
+      input,
+      button {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      /* Body Styles */
+      body {
+         font-family: Arial, sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 100vh;
+         background-color: #f4f4f9;
+      }
+
+      /* Header */
+      h1 {
+         font-size: 2.5rem;
+         /* ขยายขนาดตัวอักษร */
+         margin-bottom: 1.5rem;
+         /* เพิ่มระยะห่างด้านล่าง */
+         color: #2c3e50;
+         /* ใช้สีที่เข้มและดูหรู */
+         text-align: center;
+         /* จัดให้อยู่กึ่งกลาง */
+         font-weight: bold;
+         /* เพิ่มน้ำหนักของตัวอักษร */
+         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+         /* เพิ่มเงาให้ตัวอักษร */
+         font-family: 'Arial', sans-serif;
+         /* ตั้งค่าฟอนต์ */
+      }
+
+
+      /* Form Container */
+      form {
+         background: #fff;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         width: 100%;
+         max-width: 400px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      /* Input Styles */
+      input {
+         width: 90%;
+         padding: 10px;
+         margin: 10px 0;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         font-size: 1rem;
+      }
+
+      /* Button Styles */
+      button {
+         padding: 10px 20px;
+         background-color: #4CAF50;
+         color: white;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+         font-size: 1rem;
+         transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+         background-color: #45a049;
+      }
+   </style>
+
+</head>
+
+<body>
+   <h1>Calculator</h1>
+   <form action="/" method="post">
+      <input type="text" name="num1" placeholder="First Number">
+      <input type="text" name="num2" placeholder="Second Number">
+      <button type="submit" name="submit">Calculate</button>
+   </form>
+</body>
+
+</html>
